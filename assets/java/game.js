@@ -3,20 +3,19 @@
 
 var count = 90;
 
-var counter = setInterval(timer, 1000); //1000 will  run it every 1 second
+var counter = setInterval(timer, 1000); 
 
 function timer() {
     count = count - 1;
     $("#timer").html(count);
     if (count <= 0) {
         clearInterval(counter);
-        //counter ended, do something here
         alert("Time's Up!");
         $("quiz").hide();
         check();
     }
 
-    //Do code for showing the number of seconds here
+    
 }
 
 function check() {
@@ -33,65 +32,46 @@ function check() {
     var correct = 0;
     var incorrect = 0;
 
-    if (question1 == "To be big") {
+    if (question1 == "Mark Coleman") {
         correct++;
 
     } else {
         incorrect++;
     }
 
-    if (question2 == "Zoltar") {
+    if (question2 == "1993") {
         correct++;
     } else {
         incorrect++;
     }
 
 
-    if (question3 == "MacMillan Toy Company") {
+    if (question3 == "Chan Sung Jung") {
         correct++;
 
     } else {
         incorrect++;
     }
 
-    if (question4 == "Chopsticks") {
+    if (question4 == "Conor Mcgregor") {
         correct++;
     } else {
         incorrect++;
     }
 
 
-    if (question5 == "Jump on a trampoline") {
+    if (question5 == "Carla Esparza") {
         correct++;
 
     } else {
         incorrect++;
     }
 
-    if (question6 == "An electronic comic book") {
-        correct++;
-
-    } else {
-        incorrect++;
-    }
-
-    if (question7 == "He found a Zoltar machine and made a wish to be little again") {
-        correct++;
-
-    } else {
-        incorrect++;
-    }
-
-    if (question8 == "His girlfriend, Susan Lawrence") {
-        correct++;
-
-    } else {
-        incorrect++;
-    }
+    
 
 
 
     document.getElementById("after_submit").style.visibility = "visible";
-    document.getElementById("correct").innerHTML = "Great job! You got  " + correct + " questions correct!";
-    document.getElementById("incorrect").innerHTML = "Uh oh! You got " + incorrect + " questions incorrect.";
+    document.getElementById("correct").innerHTML = " You got  " + correct + " questions correct!";
+    document.getElementById("incorrect").innerHTML = " You got " + incorrect + " questions incorrect.";
 }
