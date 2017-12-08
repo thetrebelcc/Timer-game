@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Timer game</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+
+    <script type="text/javascript" src="assets/java/game.js"></script>
+
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+</head>
+<body>
+
+<div style="background:grey !important" class="jumbotron">
+    <h1>MMA trivia!</h1>
+    <p>Test your mma knowledge</p>
+</div>
+
+
+
+ <p>You have <span id="timer"></span> seconds remaining!</p>
+  
+</div>
+<div class="well col-md-6" id="trivia">
+    <form id= "quiz" name= "quiz">
+    <hr>
+        <p><strong>1. Who was the first UFC Heavyweight champion?</strong></p>
+        <hr>
+        
+        <div>
+            <input type="radio" id="radio1" name="question1" value="To be tall enough to ride the roller coaster">
+            <label id="r1">To be tall enough to ride the roller coaster</label>
+            </br>
+            <input type="radio" id="radio2" name="question1" value="To date Cynthia Benson">
+            <label id="r2">To date Cynthia Benson</label>
+            </br>
+            <input type="radio" id="radio3" name="question1" value="To be big">
+            <label id="r3">To be big</label>
+            </br>
+            <input type="radio" id="radio4" name="question1" value="To work at a job playing with toys">
+            <label id="r4">To work at a job playing with toys</label>
+            </br>
+        </div>
+        <div>
+        <hr>
+            <p><strong>2. ) What was the name of the arcade machine that Josh made his wish on?</strong></p>
+            <hr>
+            
+            <input type="radio" id="radio5" name="question2" value="Cleo">
+            <label id="r5">Cleo</label>
+            </br>
+            <input type="radio" id="radio6" name="question2" value="Zoltar">
+            <label id="r6">Zoltar</label>
+            </br>
+            <input type="radio" id="radio7" name="question2" value="Gypsy">
+            <label id="r7">Gypsy</label>
+            </br>
+            <input type="radio" id="radio8" name="question2" value="Fortune">
+            <label id="r8">Fortune</label>
+            </br>
+        </div>
+        <div>
+        <hr>
+            <p><strong>3. ) At what company does Josh get a job with in New York City?</strong></p>
+            <hr>
+            
+            <input type="radio" id="radio9" name="question3" value="F.A.O. Schwarz">
+            <label id="r9">F. A. O. Schwarz</label>
+            </br>
+            <input type="radio" id="radio10" name="question3" value="MacMillan Toy Company">
+            <label id="r10">MacMillan Toy Company</label>
+            </br>
+            <input type="radio" id="radio11" name="question3" value="KB Toys">
+            <label id="r11">KB Toys</label>
+            </br>
+            <input type="radio" id="radio12" name="question3" value="Toys R Us">
+            <label id="r12">Toys R Us</label>
+            </br>
+        </div>
+        <div>
+        <hr>
+            <p><strong>4. ) Which of these songs does Josh and Mr. MacMillan play on the Walking Piano at F.A.O. Schwarz?</strong></p>
+            <hr>
+            
+            <input type="radio" id="radio13" name="question4" value="Chopsticks">
+            <label id="r13">Chopsticks</label>
+            </br>
+            <input type="radio" id="radio14" name="question4" value="Hot in the City">
+            <label id="r14">Hot in the City</label>
+            </br>
+            <input type="radio" id="radio15" name="question4" value="Shimmy Shimmy Cocoa Pop">
+            <label id="r15">Shimmy Shimmy Cocoa Pop</label>
+            </br>
+            <input type="radio" id="radio16" name="question4" value="Forget Me Nots">
+            <label id="r16">Forget Me Nots</label>
+            </br>
+        </div>
+        <div>
+        <hr>
+            <p><strong>5. ) After leaving the work party, what does Josh and his co-worker Susan do at his place?</strong></p>
+            <hr>
+            
+            <input type="radio" id="radio17" name="question5" value="Jump on a trampoline">
+            <label id="r17">Jump on a trampoline</label>
+            </br>
+            <input type="radio" id="radio18" name="question5" value="Have a silly string fight">
+            <label id="r18">Have a silly string fight</label>
+            </br>
+            <input type="radio" id="radio19" name="question5" value="Play GI-Joe: Commando Attack Game">
+            <label id="r19">Play GI-Joe: Commando Attack Game</label>
+            </br>
+            <input type="radio" id="radio20" name="question5" value="Throw darts">
+            <label id="r20">Throw darts</label>
+            </br>
+        </div>
+        <div>
+        <hr>
+            <p><strong>6. ) What toy do Susan and Josh collaborate on for MacMillan Toys?</strong></p>
+            <hr>
+           
+            <input type="radio" id="radio21" name="question6" value="A transformer for girls">
+            <label id="r21">A transformer for girls</label>
+            </br>
+            <input type="radio" id="radio22" name="question6" value="An electronic comic book">
+            <label id="r22">An electronic comic book</label>
+            </br>
+            <input type="radio" id="radio23" name="question6" value="A squeezy doll">
+            <label id="r23">A squeezy doll</label>
+            </br>
+            <input type="radio" id="radio24" name="question6" value="A table hockey game">
+            <label id="r24">A table hockey game</label>
+            </br>
+        </div>
+        <div>
+        <hr>
+            <p><strong>7. ) How did Josh become a kid again?</strong></p>
+            <hr>
+            
+            <input type="radio" id="radio25" name="question7" value="The effects wore off when he went to sleep">
+            <label id="r25">The effects wore off when he went to sleep</label>
+            </br>
+            <input type="radio" id="radio26" name="question7" value="He visited a fortune teller who made him a potion to return him back to normal">
+            <label id="r26">He visited a fortune teller who made him a potion to return him back to normal</label>
+                </br>
+                <input type="radio" id="radio27" name="question7" value="He woke up from a dream and realized that it was all just a dream">
+                <label id="r27">He woke up and realized that it was all just a dream</label>
+                </br>
+                <input type="radio" id="radio28" name="question7" value="He found a Zoltar machine and made a wish to be little again">
+                <label id="r28">He found a Zoltar machine and made a wish to be little again</label>
+                </br>
+        </div>
+        <div>
+        <hr>
+            <p><strong>8. ) Who took Josh home once he made his wish to be little again?</strong></p>
+            <hr>
+        
+            <input type="radio" id="radio29" name="question8" value="His girlfriend, Susan Lawrence">
+            <label id="r29">His girlfriend, Susan Lawrence</label>
+            </br>
+            <input type="radio" id="radio30" name="question8" value="His best friend, Billy Kopecki">
+            <label id="r30">His best friend, Billy Kopecki</label>
+                </br>
+                <input type="radio" id="radio31" name="question8" value="His dream girl, Cynthia Benson">
+                <label id="r31">His dream girl, Cynthia Benson</label>
+                </br>
+                <input type="radio" id="radio32" name="question8" value="His boss, Mr. MacMillan">
+                <label id="r32">His boss, Mr. MacMillan</label>
+                </br>
+                </br>
+                <hr>
+        
+    
+    <input id="button" type="button" value="I'm finished!" 
+    onclick="check();">
+    <div id="after_submit">
+    </br>
+     <div id="score-board">
+            <p id="correct"></p>
+            <p id="incorrect"></p>
+        </div>
+</div>
+        </div>
+    </div>
+    </div>
+    </br>
+   
+</form>
+
+</div>
+</body>
+</html>
